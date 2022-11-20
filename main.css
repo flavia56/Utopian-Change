@@ -1,0 +1,882 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #C6ED86;
+    background-size: 100% 617px;
+}
+
+#containeruno{
+    width: 100%;
+    height: 617px;
+    margin:0px auto;
+}
+#carouselExampleSlidesOnly{
+    z-index: -1;
+    top: -552px;
+    display: flex;
+    margin: auto;
+}
+.carousel-inner{
+    max-height:  41rem;
+}
+
+.Principal-Startup{
+    display: flex;
+    align-items: center;
+}
+.Aux-prin{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background-color: #416B5C;
+    color: #B5E410;
+    display: flex;
+    padding: 0 20px;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;     
+    position: fixed; 
+}
+
+.logo{   
+    height: 65px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nameLogo{
+    font-size: 100%;
+    color: #B5E410;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 20px;
+    cursor: pointer;
+    color:#C6ED86;
+    display: none;
+    transition: 0.5s;
+}
+.mostrar-menu{
+    order: 1;
+}
+
+
+.margin-link{
+    margin-left: 120px;
+}
+.links .link.register{
+    padding: 6px 25px;
+    background-color: #F0F8F8;
+    color:  #416B5C;
+    border-radius: 9px;
+
+}
+
+.links .link.start{
+   text-decoration:underline;
+}
+
+
+.links .link{
+    margin: 0 10px;
+    font-size: 70%;
+    padding: 6px 0;
+    text-decoration: none;
+    color: #C6ED86;
+    transition: 0.3s all ease;
+}
+
+.mostrar-menu:hover,.esconder-menu:hover{
+    color: #B5E410;
+}
+
+.links .link:hover{
+    transform: translateY(-10px)/*esto es una animacion de los botones cuando el puntero pase por encima*/;
+    color:#B5E410;
+}
+
+#check{
+    display: none;
+}
+#containeruno{
+    padding-top: 65px;
+}
+/*PORTADA*/
+.portada {
+    max-width: 1300px;
+    height: 550px;
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    order: 0;
+}
+.celular{
+    margin-top: 50px;
+    align-items: center;
+    order: 1;
+}
+.contenedor_portada .celular img{
+    width: 245px;
+    height: 440px;
+    margin-left: 240px;
+    transition: 0.3s all ease;
+}
+.contenedor_portada .celular img:hover{
+    transform: translateY(-10px);
+}
+
+.portada .texto{
+    margin-top: 70px;
+    margin-left: 40px;
+    order: 2;
+}
+
+.contenedor_portada .texto h4{
+    font-size: 20px;
+    font-family:'Arial';
+    font-weight: lighter;
+}
+
+.contenedor_portada .texto h2{
+    font-size: 30px;
+    margin-top: 10%;
+}
+
+.contenedor_portada .texto input{
+    padding: 8px 50px;
+    margin-top: 5%;
+    border-radius: 5px;
+    color: green;
+    background: rgb(197, 218, 207);
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    transition: 0.3s all ease;
+}
+
+.portada .WhatsApp{
+    width: 200px;
+    text-align: center;
+    margin-top: 400px;
+    order: 3;
+    transition: 0.3s all ease;
+}
+.portada .WhatsApp:hover{
+    transform: translateY(-10px);
+}
+
+.portada .WhatsApp p{
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    border-radius: 5%;
+    padding: 6px 10px;
+}
+
+.portada .WhatsApp img{
+    margin-top: 5%;
+}
+
+
+.contenedor_portada .texto input:hover{
+    background-color:#DCF0ED;
+    color:#416B5C;
+    transform: translateY(-10px);
+}
+
+.Carrousel-Future{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -30px;
+}
+.FutureSelect{
+    Color:#416B5C;
+}
+.Future{
+    Color: #B7E6DC;
+}
+
+/*Separación*/
+
+#containerdos{
+    width: 100%;
+    margin:0px auto;
+    background-color: #C6ED86;
+    height: 1140px;
+}
+
+.contenedor_segundo h2{
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.conocenos{
+    width: 86%;
+    height: 370px;
+    margin-left: 7%;
+    margin-top: 3%;
+    background-image: url('img/reciclaje.jpg');
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+
+}
+
+.conocenos h4{
+    margin-left: 3.5%;
+    margin-top: 2.5%;
+    top: 6%;/*back*/
+    padding-top: 15px;
+    font-size: 20px;
+    color: #416B5C;
+}
+
+.conocenos .textodos{
+    width: 90%;
+    height: 60%;
+    margin-left: 3.5%;
+    margin-top: 2%;
+    background-color: #B0C85A;
+    border-radius: 10px;
+}
+.parrafo{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Arial';
+    text-align: justify;
+}
+
+.mision_vision{
+    margin-top: 5%;
+    margin-left: 3.5%;
+    width: 92.5%;
+    height: 92.5%;
+}
+
+.mision_vision .m_v1, .mision_vision .m_v2{
+    display: flex;
+    background-color: #F0F8F8;
+    height: 300px;   
+}
+.mision_vision .m_v2{
+    justify-content: end;
+}
+
+.mision_vision .texto_m_v{
+    background-color: #B0C85A;
+    margin-left: 20px;
+    margin-top: 2%;
+    margin-right: 20px;
+    width: 70%;
+    height: 240px;
+    border-radius: 10px;
+}
+
+#txt_vi {
+    margin-left: 5%;
+}
+
+.mision_vision .img_m_v{
+    position: relative;
+    display: inline-block;
+}
+
+.mision_vision .img_m_v img{
+    width: 250px;
+    height: 220px;
+    margin-top: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F0F8F8;;
+}
+
+#ojo{
+    height: 210px;
+    width: 200px;
+}
+
+.texto_m_v_front{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    color: #416B5C;
+    font-size: 120%;
+}
+
+/*Más*/
+
+#containertres{
+    width: 100%;
+    margin:0px auto;
+    background-color: #F0F8F8;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+.contenedor_tercero .titulo_principal{
+    font-size: 205%;
+    font-family: 'Arvo Regular';
+    top:50%;
+    color: #416B5C;
+    padding-top: 20px;
+}
+.textodos .parrafo{
+    font-size: 100%;
+}
+.Nuestros-Principios{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.logo_secundario{
+    margin-top: 40px;
+}
+.logo_secundario img{
+    height:240px ;
+    width:240px ;
+    transition: 0.3s all ease;
+}
+.logo_secundario img:hover{
+    transform: translateY(-10px);
+}
+.cajaAux{
+    margin-top: 40px;
+    margin-right: 80px;
+}
+.caja_principios{
+    background-image: url('img/principios.png');
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    width: 500px;
+}
+.columna{
+    padding: 40px 20px 40px 20px;
+}
+.columna .Lt{
+    text-align: left;
+    padding-bottom: 10px;
+    transition: 0.3s all ease;
+    color: #416B5C;
+}
+.columna .Rt{
+    text-align: right;
+    padding-bottom: 10px;
+    transition: 0.3s all ease;
+    color: #416B5C;
+}
+
+.columna .Rt:hover, .columna .Lt:hover{
+    transform: translateY(-10px);
+}
+
+/*sfasdfasdf*/
+
+
+.Contac{
+    display:flex;
+    height: 100%;
+    justify-content: space-between;
+}
+.Contactanos{
+    font-size: 200%;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #416B5C;
+}
+.container-Contac{
+    background-image: url('Img/fondo_principal.jpg');
+    background-repeat: no-repeat;
+    background-size: 220%;
+    margin: 20px;
+    padding: 20px 30px 20px 30px;
+    color: #0d4a36;
+    border-radius: 10px;
+}
+.Contac-Prim{
+    text-align: justify;
+    font-size: 120%;
+    color: #0d4a36;
+}
+.Contact-Message a{
+    text-decoration: none;
+}
+.Boton_Enviar{
+    margin: 20px 200px;
+    padding: 10px 20px;
+    background-color:#416B5C;
+    color:#F0F8F8;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+.Contact-NA, .Contact-NA-Rec, .Contact-ET, .Contact-ET-Rec{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    align-items: left;
+    padding: 0px 40px 0px 0px;
+}
+.Email{
+    margin: 10px 0px 10px 0px;
+}
+.Name, .Apellido, .Telefono{
+    margin: 10px 0px 10px 0px;
+}
+.Contac-NomRec, .Contac-ApRec, .Contac-EmRec, .Contac-TelRec{
+    margin: 0px 0px 0px 0px;
+    width: 300px;
+    border-radius: 5px;
+    border-color:#416B5C;
+    border-width: 1px;
+    padding-left: 10px;
+    color: #416B5C;
+}
+
+.Contact-Message{
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+}
+.message{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.Contac-MensRec{
+    width: 700px;
+    height: 100px;
+    border-radius: 5px;
+    border-color:#416B5C;
+    border-width: 1px;
+    padding-left: 10px;
+    color: #416B5C;
+}
+.Icons{
+    margin-top: 60px;
+}
+/*
+.Facebook{
+    Margin: 40px 30px 20px 10px;
+    display: block;
+    transition: 0.3s all ease;
+}
+.Twitter, .WhatsApp1{
+    Margin: 20px 30px 20px 10px;
+    display: block;
+    transition: 0.3s all ease;
+}
+.Facebook:hover, .Twitter:hover, .WhatsApp1:hover{
+    transform: translateY(-10px);
+}*/
+.calificacion{
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    padding: 30px 15px;
+    padding-bottom: 120px;
+    background-color:#416B5C;
+    color:#F0F8F8;
+
+    border-radius: 230px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: -10px;
+}
+.Boton_Enviar:hover{
+    background-color: #C6ED86;
+    color:#416B5C;
+}
+
+/*Container 5*/
+
+#containercinco{
+    background-color: #f0f8f8;
+}
+.Descarganos{
+    font-size: 205%;
+    font-family: 'Arvo Regular';
+    top:50%;
+    color: #416B5C;
+    padding: 20px;
+    margin-top: 20px;
+}
+.Descarga {
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.MetodosDescarga a{
+    display: block;
+}
+.CodigoQR{
+    height: 200px;
+}
+.AppStore, .GooglePlay, .AppGallery{
+    height: 60px;
+    margin-top: 10px;
+    transition: 0.3s all ease;
+}
+.AppStore:hover, .GooglePlay:hover, .AppGallery:hover{
+    transform: translateY(-10px);
+}
+
+.UC-IOS, .UC-Android{
+    height: 420px;
+    margin: 0px 20px
+}
+.Logos{
+    display: none;
+}
+
+/*Footer*/
+.contactos ul, .Redessociales ul{
+    list-style: none;
+}
+.FooterVisionarios{
+    background-color:#416b5c ;
+    padding-top: 20px;
+    color: #C6ED86;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.PrimeraSec{
+    text-align: center;
+    padding:0px 40px ;
+}
+.contactos{
+    text-align: center;
+    padding:0px 40px ;
+    border-left: 2px solid rgba(0,0,0,.4);
+}
+.contactos a{
+    text-decoration: none;
+    color:#B5E410;
+}
+.Redessociales{
+    text-align: center;
+    padding:0px 40px;
+    border-left: 2px solid rgba(0,0,0,.4);
+}
+.Redessociales img{
+    height: 16px;
+    margin-right: 10px;
+}
+
+.logofooter{
+    height: 64px;
+}
+.pfooter{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pfooter a{
+    text-decoration: none;
+    color:#B5E410;
+}
+
+/*Responsive Tablet*/
+
+@media(max-width: 980px)/*TABLET es apartir de 768px pero en este caso es mejor 960*/ {
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+    .links{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#416B5C;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 60px 0px;
+        z-index: 100;
+        transition: 0.9s;
+    }
+    .links a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position:absolute;
+        top: 20px;
+        right: 40px;
+    }
+    .links .link.register{
+        margin: 7px 50px;
+        padding: 6px 10px;
+        background-color: #F0F8F8;
+        color:  #416B5C;
+        border-radius: 9px;
+    }
+    #check:checked ~.links{
+        right: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    .contenedor_portada .celular img{
+        margin-left: 40px;
+    }
+    .parrafo{
+        font-size: 120%;
+        text-align: justify;
+        align-items: center;
+    }
+    .textodos .parrafo{
+        font-size: 90%;
+    }
+    .mision_vision .texto_m_v{
+        margin-left: 10px;
+    }
+    .mision_vision .img_m_v img {
+        width: 180px;
+    }
+}
+
+
+
+@media (max-width: 980px) {
+    .Contac{
+        display:inline;
+    }
+    .Icons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+    .Facebook, .Twitter, .WhatsApp1{
+        Margin: 20px 60px;
+        display: block;
+        transition: 0.3s all ease;
+    }
+    .Contac-MensRec{
+        width: 400px;
+        height: 100px;
+    }
+}
+
+
+/*Responsive Cel*/
+@media (max-width: 600px) {
+    #containeruno{
+        padding-top: 40px;
+    }
+    .logo{
+        height: 32px;
+        width: 32px;
+        margin: 5px 0px;
+    }
+    .nameLogo{
+        font-size: 80%;
+        padding-left: 10px;
+    }
+    .portada{
+        display:block;
+        order: 0;
+    }
+    .celular{
+        margin-top: 0px;
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor_portada .celular img{
+        width: 25%;
+        height: 25%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .portada .texto{
+        text-align: center;
+        margin: 25px 0px;
+        order: 0;
+    }
+    .portada .texto .Titulo_principal{
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .portada .WhatsApp{
+        display: none;
+    }
+    .Carrousel-Future{
+        display: block;
+        font-size: 25px;
+        text-align: center;
+    }
+    .FutureSelect{
+        Color:#416B5C;
+    }
+    .Future{
+        Color: #B7E6DC;
+    }
+}
+
+@media (max-width: 600px) {
+    #carouselExampleSlidesOnly{
+        z-index: -1;
+        top: -575px;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        margin: auto;
+    }
+    .carousel-inner{
+        max-height: 80rem;
+    }
+    
+    .parrafo{
+        font-size: 68%;
+    }
+    .textodos .parrafo{
+        font-size: 57%;
+    }
+    .mision_vision .img_m_v img {
+        width: 64px;
+        height: 220px;
+        margin: 10px 10px 0px 10px;
+    }
+    .texto_m_v_front{
+        top: 40%;
+        left: 20%;
+        font-size: 90%;
+    }
+
+    #containertres{
+        padding-left: 0px;
+    }
+    .contenedor_tercero .titulo_principal{
+        text-align: center;
+    }
+    .Nuestros-Principios{
+        display: block;
+    }
+
+    .caja_principios{
+        margin-top: 40px;
+        margin-right: 0;
+        width: 280px;
+    }
+    .columna{
+        padding: 40px 20px 40px 20px;
+        font-size: 80%;
+    }
+    .logo_secundario {
+        display: flex;
+        justify-content: space-around;
+    }
+    .cajaAux{
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+    .mision_vision .texto_m_v{
+        
+        align-items: center;
+        width: 70%;
+        height: 220px;
+    }
+    .columna .Lt{
+        padding-bottom: 0px;
+    }
+    .columna .Rt{
+        padding-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .Contac{
+        display:inline;
+    }
+    .Icons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Boton_Enviar{
+        margin: 10px 70px;
+        padding: 5px 10px;
+        background-color: #C6ED86;
+        color:  #416B5C;
+        border-radius: 9px;
+        text-decoration: none;
+        font-size: 80%;
+    }
+    .container-Contac{
+        margin: 5px;
+        padding: 10px;
+    }
+    .Contac-Prim{
+        font-size: 70%;
+    }
+
+    .Contact-NA, .Contact-NA-Rec, .Contact-ET, .Contact-ET-Rec{
+        padding: 0px;
+    }
+
+    .Contac-NomRec, .Contac-ApRec, .Contac-EmRec, .Contac-TelRec{
+        width: 130px;
+    }
+
+    .Facebook, .Twitter, .WhatsApp1{
+        Margin: 10px 20px;
+        display: block;
+        transition: 0.3s all ease;
+    }
+    .Contac-MensRec{
+        width: 280px;
+        height: 100px;
+    }
+    .calificacion{
+        display: none;
+    }
+
+    /*container 5*/
+    .Descarga{
+        display: none;
+    }
+    .Logos{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .LogosAppPng{
+        height: 60px;
+        margin: 10px 20px;
+        transition: 0.3s all ease;
+    }
+    .LogosAppPng:hover{
+        transform: translateY(-10px);
+    }
+
+    .FooterVisionarios{
+        padding-top: 0px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-around;
+    }
+    .PrimeraSec{
+        text-align: center;
+        padding:10px 40px ;
+    }
+    .contactos{
+        padding:10px 40px ;
+        border-left: 0px;
+    }
+    .Redessociales{
+        padding:10px 40px;
+        border-left: 0px;
+    }
+}
